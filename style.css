@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    line-height: 1.5;
+}
+h1,h2{
+    font-family: 'Fraunces', serif;
+}
+:root{
+    --main-bg: hsl(30, 38%, 92%);
+    --heading: hsl(212, 21%, 14%);
+    --primary-text: hsl(228, 12%, 48%);
+    --cta: hsl(158, 36%, 37%);
+    --cta-hover:hsl(158, 36%, 17%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    min-height: 100vh;
+    color: var(--primary-text);
+    background: var(--main-bg);
+    font-size: 	0.875rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+main{
+    max-width: 36.5rem;
+    background: var(--white);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+main picture img{
+    max-width: 100%;
+    height: 100%;
+}
+main .text-content {
+    padding: 1rem;
+}
+.text-content > span{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.text-content h1{
+    color: var(--heading);
+    font-size: 2rem;
+    margin: .5rem 0 1rem 0;
+}
+.text-content .price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1rem 0;
+}
+.price h2{
+    color: var(--cta);
+    font-size: 2.2rem;
+}
+.price span{
+    font-size: 0.813rem;
+    text-decoration: line-through;
+}
+.text-content button{
+    width: 100%;
+    color: var(--white);
+    background: var(--cta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+button:hover{
+    background: var(--cta-hover);
+}
+button:active{
+    transform: translateY(5px);
+}
+button span{
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+footer{
+    font-size: 0.813rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+footer a{
+    color: var(--cta);
+}
+footer a:hover{
+    text-decoration: none;
+}
+@media(min-width:650px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main .text-content{
+        padding: 1.5rem;
+    }
+}
