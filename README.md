@@ -14,7 +14,7 @@ Here is the link of the challange-
 <https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa>
 
 Here is the solution site url-
-<https://drougnov.github.io/product-preview-card-component-master/>
+<https://drougnov.github.io/product-preview-card-component-main/>
 
 ## Built with
 
